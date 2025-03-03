@@ -71,12 +71,13 @@ Replace `"your_api_key_here"` and `"path/to/dataset"` with your actual token and
 
 ```plaintext
 BTS/
-├── code/                     # Source code for training, evaluation, and fine-tuning
-│   ├── train.py              # Script to train the BTS model
-│   ├── evaluate.py           # Script to evaluate model performance
-│   └── fine_tune.py          # Script for domain-adaptive fine-tuning on new cities
-├── models/                   # Pretrained models and checkpoints
-├── datasets/                 # Scripts and utilities for data preprocessing and loading
+├── code/
+│
+│   
+│   ├── train.py                  # Script to train the BTS model
+│   ├── evaluate.py               # Script to evaluate model performance
+│   ├── fine_tune.py              # Script for domain-adaptive fine-tuning on new cities
+├── Datasets/                 # Scripts and utilities for data preprocessing and loading
 ├── images/                   # Figures and tables used in the paper
 │   ├── fig1.png              # Overview of the proposed BTS framework
 │   ├── fig2.png              # Comparison of state-of-the-art methods on accident-risk prediction
@@ -94,6 +95,15 @@ BTS/
 ---
 
 ## Usage
+
+### Preprocessing
+Before training or fine-tuning, run the data preprocessing and analysis notebooks:
+
+```bash
+jupyter notebook code/preprocessing_1.ipynb
+jupyter notebook code/preprocessing_2.ipynb
+```
+
 
 ### Training
 
@@ -118,14 +128,6 @@ For adapting the model to new cities or datasets:
 ```bash
 python code/fine_tune.py --config config.json --city "NewCityName" --output_dir ./results/
 ```
-
-### Command-Line Arguments
-
-- `--model`: Specify the model variant (e.g., `BTS`).
-- `--dataset`: Define the dataset to be used.
-- `--output_dir`: Directory to save checkpoints and results.
-
-Additional arguments can be provided for further customization.
 
 ---
 
