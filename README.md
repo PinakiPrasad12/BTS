@@ -12,7 +12,7 @@ Beyond Time and Space (BTS) introduces a novel multi-modal Graph-Transformer fra
 - **State-of-the-Art Performance**: Outperforms existing methods on key accident prediction metrics such as Accuracy, F1 Score, Precision, and Recall.
 - **Interpretable Risk Mapping**: Outputs risk assessment maps that highlight safe (green) and high-risk (red) areas.
 
-![Figure 1](images/fig1.png)  
+![Figure 1](images/fig1.png)   
 *Figure 1: Overview of the proposed BTS framework. The model integrates numerical, spatial, temporal, weather, and demographic features using transformer-based encoders and a Vision Transformer (ViT) for spatial representation. A Graph Neural Network (GNN) captures spatio-temporal dependencies across H3-based area nodes, with a Multi-Layer Perceptron (MLP) head performing final accident risk classification. The framework outputs a risk assessment map, highlighting safe (green) and high-risk (red) areas.*
 
 ![Figure 2](images/fig2.png)  
